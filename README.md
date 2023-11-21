@@ -19,7 +19,7 @@ https://developer.android.com/studio/install?hl=ja
 `OpenAI:` https://openai.com/<br>
 `TMDB:` https://themoviedb.org
 
-3. 「[One Pick](https://github.com/haru-ish/one-pick)」のクローンを作成する（ブランチは`webserver`を選択）
+3. [One Pick](https://github.com/haru-ish/one-pick)のクローンを作成する（ブランチは`webserver`を選択）
 ```shell
 $ git clone -b webserver https://github.com/haru-ish/one-pick.git
 
@@ -39,7 +39,6 @@ tmdb_api_key=your-own-tmdb-apiKey
 class DefaultServerContainer : ServerContainer {
      // 自身のIPアドレスを指定
     private val baseUrl = "http://192.168.x.x:8080/api/"
-    ...
 }    
 ```
  
@@ -52,7 +51,7 @@ $ git clone https://github.com/haru-ish/onepick-server.git
   
 $ cd onepick-server
 ```
-2. `src/main/resources` の `application.yml` を更新する
+2. `src/main/resources` の `application.yml` に自身のOpenAI APIキーを指定する
 ```:application.yml
 openai:
   model: gpt-3.5-turbo
