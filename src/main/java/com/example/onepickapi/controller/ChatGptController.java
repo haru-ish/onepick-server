@@ -41,8 +41,6 @@ public class ChatGptController {
         if(response == null || response.getChoices() == null || response.getChoices().isEmpty()) {
             return "";
         }
-        System.out.println(response.getChoices().get(0).getMessage().getContent());
-
         return response.getChoices().get(0).getMessage().getContent();
     }
 }
